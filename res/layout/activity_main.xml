@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="@string/create"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/seconds_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/seconds_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seconds_et"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/seconds_et"
+        android:text="@string/seconds" />
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/seconds_et"
+        android:layout_below="@+id/seconds_et"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textAutoCorrect" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/title_et"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/title_et"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/subject_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title_et"
+        android:layout_below="@+id/title_et"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textAutoCorrect" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/body_et"
+        android:layout_alignRight="@+id/textView1"
+        android:text="@string/heading" />
+
+    <EditText
+        android:id="@+id/body_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/subject_et"
+        android:layout_below="@+id/subject_et"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:inputType="textAutoCorrect" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/body_et"
+        android:layout_alignLeft="@+id/textView2"
+        android:text="@string/body" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:onClick="notify"
+        android:text="@string/notification" />
+
+</RelativeLayout>
